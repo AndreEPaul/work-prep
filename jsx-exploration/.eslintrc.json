@@ -2,7 +2,7 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "env": {
-    "browser": false,
+    "browser": true,
     "node": true,
     "es6": true,
     "mocha": false
@@ -20,6 +20,7 @@
     "globalReturn": true
   },
   "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "valid-jsdoc": ["error", {
       "requireReturn": true,
       "requireReturnType": true,
