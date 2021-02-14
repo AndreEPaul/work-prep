@@ -1,12 +1,16 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
 
-const Spinner = () => {
+const Spinner = (props) => {
   return (
     <div className="ui active dimmer">
-      <div className="ui big text loader">Loading...</div>
+      <div className="ui big text loader">{props.loadingText}</div>
     </div>
   );
+};
+
+Spinner.defaultProps = {
+  loadingText: "Loading...",
 };
 
 export default Spinner;
